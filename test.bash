@@ -12,8 +12,8 @@ ERROR_EXIT () {
 # TEST1
 #####################################
 
-echo 20 > $tmp-ans
-./mintest.bash 40 20 > $tmp-out || ERROR_EXIT "TEST1-1"
+echo 39 > $tmp-ans
+./mintest.bash 392 156 > $tmp-out || ERROR_EXIT "TEST1-1"
 diff $tmp-ans $tmp-out || ERROR_EXIT "TEST1-2"
 
 echo OK
