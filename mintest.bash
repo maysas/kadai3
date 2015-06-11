@@ -2,13 +2,13 @@
 
     expr "$1" + 1 >/dev/null 2>&1
     if [ $? -ge 2 ]; then
-#        return 1
+        echo "NG"
         exit 2
     fi
     
     expr "$2" + 1 >/dev/null 2>&1
     if [ $? -ge 2 ]; then
-#        return 1
+        echo "NG"
         exit 2
     fi
 
