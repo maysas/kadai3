@@ -20,7 +20,7 @@ echo 10 > $tmp-ans
 ./mintest.bash 10 50 > $tmp-out || ERROR_EXIT "TEST1-1"
 diff $tmp-ans $tmp-out || ERROR_EXIT "TEST1-2"
 
-echo a > $tmp-ans
+echo "NG" > $tmp-ans
 ./mintest.bash a b > $tmp-out || ERROR_EXIT "TEST1-1"
 diff $tmp-ans $tmp-out || ERROR_EXIT "TEST1-2"
 
